@@ -13,6 +13,7 @@ Given the following 3 documents ([example source](https://courses.cs.washington.
 * Document B: "the quick brown fox jumped over the lazy dog"
 * Document C: "dog 1 and dog 2 ate the hot dog"
 
+Then the TF-IDF scores for all words in Document A would be calculated as: 
 ![CodeCogsEqn](CodeCogsEqn.png)
 
 Your class should work something like:
