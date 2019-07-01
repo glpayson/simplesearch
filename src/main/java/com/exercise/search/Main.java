@@ -10,6 +10,8 @@ public class Main {
 		DirectoryReader dirReader = new DirectoryReader();
 		Map<String, String> fileNameToText = dirReader.read(testDir);
 
+		System.out.println(fileNameToText);
+
 		int foo = 11;
 		// Expected TF-IDF scores for src/test/resources/documents/a.txt
 		//	the, 0.0
