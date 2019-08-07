@@ -16,9 +16,4 @@ Given the following 3 documents ([example source](https://courses.cs.washington.
 Then the TF-IDF scores for all words in Document A would be calculated as: 
 ![CodeCogsEqn](CodeCogsEqn.png)
 
-Your class should work something like:
-
-```Java 
-    myIndex.tfidfScore("mouse", "a.txt")
-```
 
