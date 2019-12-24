@@ -17,7 +17,7 @@ public class Main {
 		//	with, 0.183102
 		//	cat, 0.183102
 		//	played, 0.183102
-
+		// Index myIndex = new Index(fileNameToText);
 		// Double mouseDocA = myIndex.tfidfScore("mouse", "a.txt");
 		// System.out.println(mouseDocA); // 0.183102
 
