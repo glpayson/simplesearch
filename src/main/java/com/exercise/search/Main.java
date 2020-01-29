@@ -10,16 +10,16 @@ public class Main {
 		DirectoryReader dirReader = new DirectoryReader();
 		Map<String, String> fileNameToText = dirReader.read(testDir);
 
-		int foo = 11;
+		// To be implemented
+		Index myIndex = new Index(fileNameToText);
+		Double mouseDocA = myIndex.tfidfScore("mouse", "a.txt");
+		System.out.println(mouseDocA); // 0.183102
+
 		// Expected TF-IDF scores for src/test/resources/documents/a.txt
 		//	the, 0.0
 		//	mouse, 0.183102
 		//	with, 0.183102
 		//	cat, 0.183102
 		//	played, 0.183102
-		// Index myIndex = new Index(fileNameToText);
-		// Double mouseDocA = myIndex.tfidfScore("mouse", "a.txt");
-		// System.out.println(mouseDocA); // 0.183102
-
 	}
 }
