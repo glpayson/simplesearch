@@ -10,6 +10,8 @@ public class Main {
 		DirectoryReader dirReader = new DirectoryReader();
 		Map<String, String> fileNameToText = dirReader.read(testDir);
 
+		System.out.println(fileNameToText.toString());
+
 		// To be implemented
 		Index myIndex = new Index(fileNameToText);
 		Double mouseDocA = myIndex.tfidfScore("mouse", "a.txt");
