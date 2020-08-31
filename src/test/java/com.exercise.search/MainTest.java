@@ -17,12 +17,13 @@ class MainTest {
 		String testDir = "src/test/resources/documents";
 		DirectoryReader dirReader = new DirectoryReader();
 		Map<String, String> fileNameToText = dirReader.read(testDir);
+		System.out.println(fileNameToText);
 
 		// Calculate tf-idf for "mouse" in document "a.txt"
 		Index myIndex = new Index(fileNameToText);
 		double actual = myIndex.tfidfScore("mouse", "a.txt");
 		double expected = 0.183102;
-		
+
 		assertEquals(expected, actual, 0.00001);
 	}
 }
